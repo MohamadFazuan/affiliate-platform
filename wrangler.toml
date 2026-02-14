@@ -1,0 +1,34 @@
+name = "affiliate-platform-worker"
+main = "backend/worker.ts"
+compatibility_date = "2024-01-01"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "affiliate-db"
+database_id = "35446c71-427e-40ad-b800-8bf4712de17d"
+
+# R2 Bucket binding (optional)
+[[r2_buckets]]
+binding = "ASSETS"
+bucket_name = "affiliate-assets"
+
+# Environment variables
+[vars]
+JWT_SECRET = "affiliateiq2025"
+ENVIRONMENT = "production"
+APP_URL = "https://your-app.pages.dev"
+
+# Stripe Configuration (Production)
+# Add these secrets using: wrangler secret put STRIPE_SECRET_KEY
+# wrangler secret put STRIPE_WEBHOOK_SECRET
+# STRIPE_SECRET_KEY = "sk_live_..."
+# STRIPE_WEBHOOK_SECRET = "whsec_..."
+
+# Rate limiting
+[limits]
+cpu_ms = 50
+
+# Workers AI (optional for future AI features) - Commented out to avoid remote proxy issues
+# [ai]
+# binding = "AI"

@@ -1,0 +1,59 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js
+.next/
+out/
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.*.local
+.dev.vars
+
+# Debug
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Wrangler
+.wrangler/
+wrangler.toml.backup
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+.cache/
+
+# Build artifacts
+*.tsbuildinfo
+
+# Local database
+
+# Windows reserved names
+nul
+NUL
+*.db
+*.sqlite
+
+# Cloudflare
+.dev.vars

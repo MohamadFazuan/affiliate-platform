@@ -1,0 +1,6 @@
+# Cloudflare Worker Development Variables
+# Used by wrangler dev
+# Copy this file to .dev.vars and fill in your values
+
+JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+ENVIRONMENT=development
